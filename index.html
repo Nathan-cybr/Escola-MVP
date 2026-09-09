@@ -1,0 +1,242 @@
+```html
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zero Desperdício</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background: #f4fff6;
+            color: #203b28;
+        }
+
+        header {
+            background: #2e7d32;
+            color: white;
+            padding: 20px 8%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        header h1 {
+            font-size: 24px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin-left: 20px;
+        }
+
+        .hero {
+            padding: 80px 8%;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 40px;
+        }
+
+        .hero-text {
+            max-width: 600px;
+        }
+
+        .hero h2 {
+            font-size: 45px;
+            margin-bottom: 20px;
+        }
+
+        .hero p {
+            font-size: 19px;
+            line-height: 1.6;
+            margin-bottom: 25px;
+        }
+
+        button {
+            background: #43a047;
+            color: white;
+            border: none;
+            padding: 14px 25px;
+            border-radius: 8px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        button:hover {
+            background: #2e7d32;
+        }
+
+        .stats {
+            background: white;
+            padding: 50px 8%;
+            text-align: center;
+        }
+
+        .stats h2 {
+            margin-bottom: 30px;
+        }
+
+        .cards {
+            display: flex;
+            justify-content: center;
+            gap: 25px;
+            flex-wrap: wrap;
+        }
+
+        .card {
+            background: #e8f5e9;
+            padding: 30px;
+            border-radius: 12px;
+            width: 250px;
+        }
+
+        .card h3 {
+            font-size: 30px;
+            color: #2e7d32;
+            margin-bottom: 10px;
+        }
+
+        .how {
+            padding: 60px 8%;
+            text-align: center;
+        }
+
+        .steps {
+            display: flex;
+            justify-content: center;
+            gap: 25px;
+            margin-top: 30px;
+            flex-wrap: wrap;
+        }
+
+        .step {
+            width: 250px;
+            padding: 25px;
+            background: white;
+            border-radius: 12px;
+            box-shadow: 0 3px 10px #0002;
+        }
+
+        .step span {
+            font-size: 35px;
+        }
+
+        footer {
+            background: #1b5e20;
+            color: white;
+            text-align: center;
+            padding: 25px;
+        }
+
+        #mensagem {
+            margin-top: 20px;
+            font-weight: bold;
+            color: #2e7d32;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>🌱 Zero Desperdício</h1>
+
+        <nav>
+            <a href="#solucao">Solução</a>
+            <a href="#como">Como funciona</a>
+        </nav>
+    </header>
+
+    <section class="hero" id="solucao">
+        <div class="hero-text">
+            <h2>Menos desperdício, mais alimentação.</h2>
+
+            <p>
+                Nossa solução ajuda escolas a controlar a quantidade
+                de comida preparada e identificar o desperdício,
+                contribuindo para uma alimentação escolar mais
+                sustentável.
+            </p>
+
+            <button onclick="participar()">
+                Quero participar
+            </button>
+
+            <p id="mensagem"></p>
+        </div>
+    </section>
+
+    <section class="stats">
+        <h2>Por que combater o desperdício?</h2>
+
+        <div class="cards">
+
+            <div class="card">
+                <h3>🍽️</h3>
+                <p>Reduzimos a quantidade de comida desperdiçada.</p>
+            </div>
+
+            <div class="card">
+                <h3>💰</h3>
+                <p>Ajudamos a escola a economizar recursos.</p>
+            </div>
+
+            <div class="card">
+                <h3>🌱</h3>
+                <p>Contribuímos para um ambiente mais sustentável.</p>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="how" id="como">
+
+        <h2>Como funciona?</h2>
+
+        <div class="steps">
+
+            <div class="step">
+                <span>1️⃣</span>
+                <h3>Registrar</h3>
+                <p>A escola registra a quantidade de refeições preparadas.</p>
+            </div>
+
+            <div class="step">
+                <span>2️⃣</span>
+                <h3>Medir</h3>
+                <p>O desperdício é medido diariamente.</p>
+            </div>
+
+            <div class="step">
+                <span>3️⃣</span>
+                <h3>Melhorar</h3>
+                <p>Os dados ajudam a escola a preparar a quantidade ideal.</p>
+            </div>
+
+        </div>
+
+    </section>
+
+    <footer>
+        <p>© 2026 Zero Desperdício — Alimentação escolar sustentável 🌱</p>
+    </footer>
+
+    <script>
+        function participar() {
+            document.getElementById("mensagem").innerText =
+                "Obrigado pelo interesse! Vamos juntos combater o desperdício. 🌱";
+        }
+    </script>
+
+</body>
+</html>
+```
